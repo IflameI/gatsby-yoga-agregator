@@ -1,0 +1,28 @@
+.list {
+  padding-top: 50px;
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+  &__column {
+    padding: 0 10px;
+    flex: 0 1 50%;
+  }
+  &__item {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  }
+  &__title {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  &__place {
+    margin-bottom: 10px;
+  }
+  &__price {
+    margin-bottom: 10px;
+  }
+}
