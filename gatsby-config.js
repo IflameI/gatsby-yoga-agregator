@@ -34,8 +34,28 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      // The name of the plugin
+      resolve: "gatsby-source-mongodb",
+      options: {
+        // Name of the database and collection where are books reside
+        dbName: "yogas",
+        collection: "yoga",
+        server: {
+          address: "cluster0-shard-00-02.vy4bz.mongodb.net",
+          port: 27017,
+        },
+        auth: {
+          user: "admin1",
+          password: "admin1",
+        },
+        extraParams: {
+          replicaSet: "Cluster0-shard-0",
+          ssl: true,
+          authSource: "admin",
+          retryWrites: true,
+        },
+      },
+    },
   ],
 }

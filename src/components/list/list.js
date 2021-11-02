@@ -1,26 +1,23 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
+import { useSelector } from "react-redux"
+
 import ListItem from "./listItem"
 
-const List = () => (
-  <section className="list">
-    <div className="container">
-      <div className="list__row">
-        <div className="list__column">
-          <ListItem />
-        </div>
-        <div className="list__column">
-          <ListItem />
-        </div>
-        <div className="list__column">
-          <ListItem />
-        </div>
-        <div className="list__column">
-          <ListItem />
+const List = () => {
+  const placies = useSelector(state => state.placies.placiesItems)
+  return (
+    <section className="list">
+      <div className="container">
+        <div className="list__row">
+          {placies.map(item => (
+            <div className="list__column">
+              <ListItem key={item.node.id} item={item.node} />
+            </div>
+          ))}
         </div>
       </div>
-    </div>
-  </section>
-)
+    </section>
+  )
+}
 
 export default List
