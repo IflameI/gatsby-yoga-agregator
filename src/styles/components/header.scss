@@ -66,6 +66,7 @@
     display: -ms-inline-flexbox;
     display: inline-flex;
     & li {
+      cursor: pointer;
       &:not(:last-child) {
         padding-right: 20px;
       }
@@ -79,4 +80,8 @@
       }
     }
   }
+}
+
+.menuActive {
+  color: #77e13c;
 }
