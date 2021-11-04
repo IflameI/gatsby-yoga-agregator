@@ -1,6 +1,6 @@
 import * as React from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { setPlacies } from "../../store/actions/placies"
+import { setCoords, setPlacies } from "../../store/actions/placies"
 
 import ListItem from "./listItem"
 

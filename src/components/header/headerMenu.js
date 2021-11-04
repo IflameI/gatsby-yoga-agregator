@@ -7,7 +7,7 @@ const aviableArea = [
     typeName: "msk",
   },
   {
-    title: "Санкт-Петербург",
+    title: "Екатеринбург",
     typeName: "ekb",
   },
   {
@@ -17,7 +17,7 @@ const aviableArea = [
 ]
 
 const HeaderMenu = () => {
-  const [activeArea, setActiveArea] = React.useState("")
+  const [activeArea, setActiveArea] = React.useState("ekb")
   return (
     <nav className="header__menu menu">
       <div className="menu__body">

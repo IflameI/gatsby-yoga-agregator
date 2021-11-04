@@ -1,6 +1,8 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
+import MainMap from "./map/map"
+
 const Main = () => (
   <section className="main">
     <div className="main__row">
@@ -14,20 +16,7 @@ const Main = () => (
         </div>
       </div>
       <div className="main__column">
-        <div className="main__map">
-          <StaticImage src="../images/map.jpg" alt="Map" />
-          <div className="main__category">
-            <div className="main__button">
-              <button>Фильтр 1</button>
-            </div>
-            <div className="main__button">
-              <button>Фильтр 2</button>
-            </div>
-            <div className="main__button">
-              <button>Фильтр 3</button>
-            </div>
-          </div>
-        </div>
+        <MainMap />
       </div>
     </div>
   </section>
