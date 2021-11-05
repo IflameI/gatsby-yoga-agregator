@@ -1,6 +1,6 @@
 import * as React from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { setCoords, setPlacies } from "../../store/actions/placies"
+import { setPlacies } from "../../store/actions/placies"
 
 import ListItem from "./listItem"
 
@@ -22,8 +22,8 @@ const List = ({ data }) => {
         <div className="list__row">
           {placiesItems &&
             placiesItems.map(item => (
-              <div className="list__column">
-                <ListItem key={item.node.id} item={item.node} />
+              <div key={item.node.id} className="list__column">
+                <ListItem item={item.node} />
               </div>
             ))}
         </div>

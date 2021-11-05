@@ -1,7 +1,7 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
-import MainMap from "./map/map"
+import MapSection from "./map/mapSection"
 
 const Main = () => (
   <section className="main">
@@ -16,7 +16,7 @@ const Main = () => (
         </div>
       </div>
       <div className="main__column">
-        <MainMap />
+        <MapSection />
       </div>
     </div>
   </section>
