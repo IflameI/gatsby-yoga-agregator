@@ -1,20 +1,21 @@
 import * as React from "react"
 import { graphql } from "gatsby"
+import { Router } from "@reach/router"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Main from "../components/main"
-import List from "../components/list/list"
-import Header from "../components/header/header"
+import Main from "../components/Main/Main"
+import InternalPage from "./InternalPage"
 
 const IndexPage = ({ data }) => {
   return (
     <>
-      <Header />
       <Layout>
         <Seo title="Home" />
-        <Main />
-        <List data={data} />
+        <Router>
+          <Main path="/" data={data} />
+          <InternalPage path="/place/:id" data={data} />
+        </Router>
       </Layout>
     </>
   )

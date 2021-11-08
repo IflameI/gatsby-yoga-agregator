@@ -33,12 +33,11 @@ const coordsKz = [
 
 const MainMap = () => {
   const { currentArea } = useSelector(state => state.placies)
-
   return (
     <>
       <Map
-        width={900}
-        height={400}
+        width="100%"
+        height="100%"
         defaultState={{ center: [56.838011, 60.597474], zoom: 4 }}
       >
         {currentArea === "ekb"

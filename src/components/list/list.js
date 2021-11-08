@@ -2,7 +2,7 @@ import * as React from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { setPlacies } from "../../store/actions/placies"
 
-import ListItem from "./listItem"
+import ListItem from "./ListItem"
 
 const List = ({ data }) => {
   const dispatch = useDispatch()
