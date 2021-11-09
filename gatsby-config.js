@@ -62,5 +62,4 @@ module.exports = {
       },
     },
   ],
-  pathPrefix: "/gatsby-yoga-agregator",
 }
