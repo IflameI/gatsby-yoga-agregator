@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -39,15 +43,15 @@ module.exports = {
       resolve: "gatsby-source-mongodb",
       options: {
         // Name of the database and collection where are books reside
-        dbName: "yogas",
-        collection: "yoga",
+        dbName: process.env.DB_NAME,
+        collection: process.env.DB_COLLECTION,
         server: {
-          address: "cluster0-shard-00-02.vy4bz.mongodb.net",
-          port: 27017,
+          address: process.env.SERVER_ADDRESS,
+          port: process.env.SERVER_PORT,
         },
         auth: {
-          user: "admin1",
-          password: "admin1",
+          user: process.env.AUTH_USER,
+          password: process.env.AUTH_PASSWORD,
         },
         extraParams: {
           replicaSet: "Cluster0-shard-0",
@@ -57,6 +61,6 @@ module.exports = {
         },
       },
     },
-    { pathPrefix: "/gatsby-yoga-agregator" },
   ],
+  pathPrefix: "/gatsby-yoga-agregator",
 }
