@@ -52,4 +52,13 @@
     font-weight: 700;
     padding-right: 4px;
   }
+  &__address {
+    a {
+      color: #000;
+      &:hover {
+        color: #77e13c;
+        @include anim(0.3s, 0s);
+      }
+    }
+  }
 }
