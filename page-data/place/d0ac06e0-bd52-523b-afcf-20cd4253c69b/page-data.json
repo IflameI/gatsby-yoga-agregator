@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-internal-page-js",
+    "path": "/place/d0ac06e0-bd52-523b-afcf-20cd4253c69b",
+    "result": {"data":{"allMongodbYogasYoga":{"edges":[{"node":{"address":"ул. Белинского, 222","price":"1000 - 6000₽/мес","description":"Boho - это уютное камерное пространство, которое вдохновляет и объединяет людей, выбравших здоровый и осознанный образ жизни.","title":"Boho студия йоги и телесных практик","site":"https://bohoyoga.ru/","tel":"8 (982) 719-23-24"}}]}},"pageContext":{"url":"d0ac06e0-bd52-523b-afcf-20cd4253c69b"}},
+    "staticQueryHashes": []}
