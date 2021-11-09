@@ -1,4 +1,5 @@
-import React from "react"
+import * as React from "react"
+
 import { YMaps } from "react-yandex-maps"
 import MainMap from "./MainMap"
 

@@ -1,4 +1,5 @@
-import React from "react"
+import * as React from "react"
+
 import { useSelector } from "react-redux"
 
 import { Map, Placemark } from "react-yandex-maps"

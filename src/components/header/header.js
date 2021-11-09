@@ -18,7 +18,6 @@ const Header = () => {
             <span></span>
             <span></span>
           </div>
-
           {location.pathname === "/" && <HeaderMenu />}
         </div>
       </div>
